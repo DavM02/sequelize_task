@@ -3,7 +3,7 @@ import Rating from "../models/rating.js";
 import Dealership from "../models/dealership.js";
 import sequelize from "../config/db.js";
 import Car from "../models/car.js";
-import Feature from "../models/Feature.js";
+import Feature from "../models/feature.js";
 class DealershipService {
     async createDealership(name, address, description) {
         const dealership = await Dealership.create({ name, address, description });
